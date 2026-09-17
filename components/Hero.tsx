@@ -218,9 +218,15 @@ export default function Hero() {
                   </textPath>
                 </text>
               </svg>
-              {/* Center Badge Core with Red Glow */}
-              <div className="absolute w-10 h-10 rounded-full bg-[#ff2a3b] text-white flex items-center justify-center shadow-[0_0_20px_rgba(255,42,59,0.55)]">
-                <span className="text-xs font-mono font-black">NA</span>
+              {/* Center Badge Core with Red Glow and Brush NA Logo */}
+              <div className="absolute w-12 h-12 rounded-full bg-[#ff2a3b] text-white flex items-center justify-center p-2 shadow-[0_0_22px_rgba(255,42,59,0.7)]">
+                <Image
+                  src="/na-brush-white.png"
+                  alt="NA Logo"
+                  width={28}
+                  height={22}
+                  className="object-contain filter drop-shadow-[0_1px_3px_rgba(0,0,0,0.5)]"
+                />
               </div>
             </div>
 
