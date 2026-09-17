@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { motion, useScroll, useSpring } from "framer-motion";
 import { ArrowUpRight, Menu, X } from "lucide-react";
 import { PERSONAL_INFO } from "@/data/portfolioData";
@@ -77,23 +76,13 @@ export default function Navbar() {
 
       {/* Main Navbar - Clean matched layout matching user image */}
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-4 flex items-center justify-between">
-        {/* Brand Logo: Extracted NA Monogram */}
+        {/* Brand Logo: NA. with crimson dot matching user monogram */}
         <Link
           href="#"
-          className="flex items-center gap-2 group select-none py-1"
+          className="text-2xl font-black tracking-tighter text-white font-sans flex items-center group select-none"
         >
-          <div className="relative w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center rounded-xl bg-white/5 border border-white/10 group-hover:border-[#ff2a3b]/60 p-1.5 transition-all shadow-md group-hover:shadow-[0_0_15px_rgba(255,42,59,0.3)]">
-            <Image
-              src="/na-logo-transparent.png"
-              alt="Nikhil Appari NA Logo"
-              width={36}
-              height={36}
-              className="object-contain filter drop-shadow-[0_2px_8px_rgba(255,42,59,0.4)]"
-            />
-          </div>
-          <span className="text-xl font-black tracking-tighter text-white font-sans hidden sm:inline-block">
-            NIKHIL<span className="text-[#ff2a3b] ml-0.5">•</span>
-          </span>
+          <span className="group-hover:text-gray-200 transition-colors">NA</span>
+          <span className="text-[#ff2a3b] text-3xl leading-none ml-0.5">•</span>
         </Link>
 
         {/* Desktop Navigation Links with active section detection */}

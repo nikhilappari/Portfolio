@@ -61,17 +61,18 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAExUlEQVR4nO1WXWxURRT+zsy9+3N329JasBAIERJAFBGLJL6Ut4bog5LYmvTFB4xEgVcLMbhBkvKjQIGGWBIkGIyyxGAMagRDW1P5iRgiCWisBVtcBIqw/dmyezv3fj50V5fSwjb6wEO/ZHKTOzNnvvOdM2cOMIEJPCwgqUjqEUPGaycGqP+b2LhJECh4j5U9QANYZIyZZFlWP/714ryIDJAUEWEhBttnzJgtV650Fs6WFJKW67qLPc87wzx4ntdC0npQOAgoAtJaVvb4uUDg0uWZMycRkPEokSNjk2zNnu9mv/uyc9ZY++KAhgiOBcMH/oDwUij0DgC0AGPuGfVwAHBdt5Lkbc+YQXqeR5LGmPqxSMSHw4fT5eWVbcoy7VBDv2url+XlU7Mq3Dcp8ye9bDgynjFXlNbLoVQGxlBrvZnkSyJiRlVCBP0DqQYDqpRoT1MVX+8bWC8A8YAw3MVORIhUSmnLUh0i0/uPH98Cy3LpefCBgyQXZknonPe1gPeF49SlIAN9TnRdQEmwQ2nT5/kresvL5wDw76fCvROuCwBudN48019dXe319m4SramAiO/7n5OcDMCPx+P6AkDW1Oibnl8/qGXDjbpXtt9Q8lcSviRFBRJ9qY0C8HAhyUhSAUAmk3nCZDJdCAaRDEe29AI/kNyRdzPaWlparLPNzTZE8K7jrN/sOAdzdvY50bcPa5ufWiH3lBXyu4sfeTanVmEKABDLMoldu5xJ6cF6HXK8XpFFAD4BAKVUVVVV1d7FK1cOfbR1ayQdicy/FQqtze0dmFax+5aS6yka1QNKV3qwAVLAbcxXwPO8Tp48GSYgyerqssuW3f9TNPI1yRM5JYwx6wAAlgWxLJCUWCxmQSlsKy5evV9Z3KNt9ysd4Lni4ur7qTA6ATKYKyTfVVQsbRPhkdmzvyF5Ma9WPf868NwHU6Z0HygpvfqtU5S4bQf/vFVUtGdbMPjLXmV5HyvbPxEI/shYTI2WjKOGgByuugKwubLSrrp2re3X0pJYR2dndeOSJQMAbmSXTtVAY086nR7y/DeHyDV3RK2JkodsK7BHCVSfkqGAh2e63t9eJ4A/ZnHKU2CB53ndiUTCyf4XZqX9sK7ueGdbGzPp9E2Sp96aPPnVdY7D+rlzF4y011xZ6ey0g937tO0dtULez1awi089GsmV7dEI5J7g50jeSSaTZbk3IPtUC8kKklez8q9YDXSvnT59EwDEgEAc0AR0HAgAQFO0+I0Dls1Ddjj9mwryejC8EQDOAvZoBAQAjDExkh7JmnxlcsWnr6fnRZKnt0yb1rDeiXwPpRAbljXfK4kBav/SpaEmO3DpMx0YOqXDd27qQKq/tPRJAGB+Qma9c4wxq/ISzBhjakkGcuQYiykAONPU9HRDNHrsvVmzpsTGkDRLCruj0de+VJpnxGYGmhltXestKpqTey2FpCSTyRLHcV7WWr8gIi4AH8O9Al3XPRIOh48CGDhcW6suzJ/P0sbG5XY02rEqkTgfA9SG4fUjIQCwc9myQKS1ddcc3y95DGKm0g8NhZyLmYULdpS0tyfvkn8s5M/Ha2r00bq60qyXhbdfI064RzURyU/Ef8aYpApvNiSXnHnjP/eN4+4TJzCBhxZ/A3oN5s7HwV6mAAAAAElFTkSuQmCC",
-        type: "image/png",
-      },
-      {
-        url: "/na-icon-32.png",
-        sizes: "32x32",
-        type: "image/png",
+        url: `data:image/svg+xml,${encodeURIComponent(
+          '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64"><rect width="64" height="64" rx="14" fill="#07080a"/><rect width="60" height="60" x="2" y="2" rx="12" fill="none" stroke="#ff2a3b" stroke-width="3" stroke-opacity="0.9"/><text x="12" y="44" font-family="system-ui, -apple-system, sans-serif" font-size="32" font-weight="900" fill="#ffffff" letter-spacing="-1">N</text><text x="34" y="44" font-family="system-ui, -apple-system, sans-serif" font-size="32" font-weight="900" fill="#ff2a3b" letter-spacing="-1">A</text><circle cx="53" cy="42" r="3" fill="#ff2a3b"/></svg>'
+        )}`,
+        type: "image/svg+xml",
       },
     ],
-    shortcut: "/favicon.ico",
-    apple: "/na-icon-192.png",
+    shortcut: `data:image/svg+xml,${encodeURIComponent(
+      '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64"><rect width="64" height="64" rx="14" fill="#07080a"/><rect width="60" height="60" x="2" y="2" rx="12" fill="none" stroke="#ff2a3b" stroke-width="3" stroke-opacity="0.9"/><text x="12" y="44" font-family="system-ui, -apple-system, sans-serif" font-size="32" font-weight="900" fill="#ffffff" letter-spacing="-1">N</text><text x="34" y="44" font-family="system-ui, -apple-system, sans-serif" font-size="32" font-weight="900" fill="#ff2a3b" letter-spacing="-1">A</text><circle cx="53" cy="42" r="3" fill="#ff2a3b"/></svg>'
+    )}`,
+    apple: `data:image/svg+xml,${encodeURIComponent(
+      '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64"><rect width="64" height="64" rx="14" fill="#07080a"/><rect width="60" height="60" x="2" y="2" rx="12" fill="none" stroke="#ff2a3b" stroke-width="3" stroke-opacity="0.9"/><text x="12" y="44" font-family="system-ui, -apple-system, sans-serif" font-size="32" font-weight="900" fill="#ffffff" letter-spacing="-1">N</text><text x="34" y="44" font-family="system-ui, -apple-system, sans-serif" font-size="32" font-weight="900" fill="#ff2a3b" letter-spacing="-1">A</text><circle cx="53" cy="42" r="3" fill="#ff2a3b"/></svg>'
+    )}`,
   },
 };
 
@@ -108,11 +109,11 @@ export default function RootLayout({
       <head>
         <link
           rel="icon"
-          type="image/png"
-          href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAExUlEQVR4nO1WXWxURRT+zsy9+3N329JasBAIERJAFBGLJL6Ut4bog5LYmvTFB4xEgVcLMbhBkvKjQIGGWBIkGIyyxGAMagRDW1P5iRgiCWisBVtcBIqw/dmyezv3fj50V5fSwjb6wEO/ZHKTOzNnvvOdM2cOMIEJPCwgqUjqEUPGaycGqP+b2LhJECh4j5U9QANYZIyZZFlWP/714ryIDJAUEWEhBttnzJgtV650Fs6WFJKW67qLPc87wzx4ntdC0npQOAgoAtJaVvb4uUDg0uWZMycRkPEokSNjk2zNnu9mv/uyc9ZY++KAhgiOBcMH/oDwUij0DgC0AGPuGfVwAHBdt5Lkbc+YQXqeR5LGmPqxSMSHw4fT5eWVbcoy7VBDv2url+XlU7Mq3Dcp8ye9bDgynjFXlNbLoVQGxlBrvZnkSyJiRlVCBP0DqQYDqpRoT1MVX+8bWC8A8YAw3MVORIhUSmnLUh0i0/uPH98Cy3LpefCBgyQXZknonPe1gPeF49SlIAN9TnRdQEmwQ2nT5/kresvL5wDw76fCvROuCwBudN48019dXe319m4SramAiO/7n5OcDMCPx+P6AkDW1Oibnl8/qGXDjbpXtt9Q8lcSviRFBRJ9qY0C8HAhyUhSAUAmk3nCZDJdCAaRDEe29AI/kNyRdzPaWlparLPNzTZE8K7jrN/sOAdzdvY50bcPa5ufWiH3lBXyu4sfeTanVmEKABDLMoldu5xJ6cF6HXK8XpFFAD4BAKVUVVVV1d7FK1cOfbR1ayQdicy/FQqtze0dmFax+5aS6yka1QNKV3qwAVLAbcxXwPO8Tp48GSYgyerqssuW3f9TNPI1yRM5JYwx6wAAlgWxLJCUWCxmQSlsKy5evV9Z3KNt9ysd4Lni4ur7qTA6ATKYKyTfVVQsbRPhkdmzvyF5Ma9WPf868NwHU6Z0HygpvfqtU5S4bQf/vFVUtGdbMPjLXmV5HyvbPxEI/shYTI2WjKOGgByuugKwubLSrrp2re3X0pJYR2dndeOSJQMAbmSXTtVAY086nR7y/DeHyDV3RK2JkodsK7BHCVSfkqGAh2e63t9eJ4A/ZnHKU2CB53ndiUTCyf4XZqX9sK7ueGdbGzPp9E2Sp96aPPnVdY7D+rlzF4y011xZ6ey0g937tO0dtULez1awi089GsmV7dEI5J7g50jeSSaTZbk3IPtUC8kKklez8q9YDXSvnT59EwDEgEAc0AR0HAgAQFO0+I0Dls1Ddjj9mwryejC8EQDOAvZoBAQAjDExkh7JmnxlcsWnr6fnRZKnt0yb1rDeiXwPpRAbljXfK4kBav/SpaEmO3DpMx0YOqXDd27qQKq/tPRJAGB+Qma9c4wxq/ISzBhjakkGcuQYiykAONPU9HRDNHrsvVmzpsTGkDRLCruj0de+VJpnxGYGmhltXestKpqTey2FpCSTyRLHcV7WWr8gIi4AH8O9Al3XPRIOh48CGDhcW6suzJ/P0sbG5XY02rEqkTgfA9SG4fUjIQCwc9myQKS1ddcc3y95DGKm0g8NhZyLmYULdpS0tyfvkn8s5M/Ha2r00bq60qyXhbdfI064RzURyU/Ef8aYpApvNiSXnHnjP/eN4+4TJzCBhxZ/A3oN5s7HwV6mAAAAAElFTkSuQmCC"
+          type="image/svg+xml"
+          href={`data:image/svg+xml,${encodeURIComponent(
+            '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64"><rect width="64" height="64" rx="14" fill="#07080a"/><rect width="60" height="60" x="2" y="2" rx="12" fill="none" stroke="#ff2a3b" stroke-width="2.5" stroke-opacity="0.8"/><text x="12" y="44" font-family="system-ui, -apple-system, sans-serif" font-size="32" font-weight="900" fill="#ffffff" letter-spacing="-1">N</text><text x="34" y="44" font-family="system-ui, -apple-system, sans-serif" font-size="32" font-weight="900" fill="#ff2a3b" letter-spacing="-1">A</text><circle cx="53" cy="42" r="3" fill="#ff2a3b"/></svg>'
+          )}`}
         />
-        <link rel="icon" sizes="32x32" href="/na-icon-32.png" />
-        <link rel="apple-touch-icon" href="/na-icon-192.png" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
