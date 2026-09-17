@@ -125,19 +125,19 @@ export default function Hero() {
       </div>
 
       {/* 3. MOBILE-OPTIMIZED STRUCTURE: Clean vertical sequence with PORTFOLIO glowing prominently behind the portrait */}
-      <div className="lg:hidden flex flex-col items-center w-full z-20 px-5 pt-3 pb-4">
-        {/* Mobile Portrait Frame with PORTFOLIO typography directly in the background */}
-        <div className="relative w-full max-w-[340px] h-[44vh] min-h-[290px] max-h-[380px] flex items-end justify-center mb-4">
+      <div className="lg:hidden flex flex-col items-center w-full z-20 pt-2 pb-4">
+        {/* Mobile Portrait Frame with massive full-width PORTFOLIO typography directly in the background */}
+        <div className="relative w-full h-[46vh] min-h-[310px] max-h-[400px] flex items-end justify-center mb-4 overflow-visible">
           
-          {/* Bold, Full-Width "PORTFOLIO" Backdrop spanning across the entire mobile screen */}
-          <div className="absolute top-1 sm:top-2 -inset-x-12 flex items-center justify-center pointer-events-none select-none z-0">
-            <span className="text-[23vw] font-black text-[#ff2a3b]/40 tracking-tighter uppercase leading-none font-sans filter drop-shadow-[0_0_40px_rgba(255,42,59,0.55)] whitespace-nowrap">
+          {/* Massive, Elaborate "PORTFOLIO" Backdrop spanning edge-to-edge */}
+          <div className="absolute top-0 inset-x-0 w-full flex items-center justify-center pointer-events-none select-none z-0">
+            <h1 className="text-[26vw] font-black text-[#ff2a3b]/55 tracking-tighter uppercase leading-[0.8] font-sans filter drop-shadow-[0_0_50px_rgba(255,42,59,0.7)] whitespace-nowrap select-none scale-y-110">
               PORTFOLIO
-            </span>
+            </h1>
           </div>
 
-          {/* Ambient Rim Glow behind head */}
-          <div className="absolute top-1/6 left-1/2 -translate-x-1/2 w-64 h-64 bg-[#ff2a3b]/30 rounded-full blur-[75px] pointer-events-none z-0" />
+          {/* Ambient Rim Glow behind head & shoulders */}
+          <div className="absolute top-4 left-1/2 -translate-x-1/2 w-72 h-72 bg-[#ff2a3b]/35 rounded-full blur-[85px] pointer-events-none z-0" />
           {HERO_IMAGES.map((img, idx) => {
             const isActive = imageIndex === idx;
             return (
