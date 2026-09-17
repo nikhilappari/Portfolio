@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown, Sparkles } from "lucide-react";
 
@@ -97,9 +98,19 @@ export default function Preloader({ onComplete }: PreloaderProps) {
 
           {/* Top Bar: Brand Logo & Status */}
           <div className="flex items-center justify-between z-10 w-full">
-            <div className="flex items-center gap-1 text-lg sm:text-xl font-black tracking-tighter">
-              <span>NA</span>
-              <span className="text-[#ff2a3b] text-xl sm:text-2xl leading-none">•</span>
+            <div className="flex items-center gap-2">
+              <div className="relative w-8 h-8 flex items-center justify-center rounded-lg bg-white/5 border border-white/10 p-1">
+                <Image
+                  src="/na-logo-transparent.png"
+                  alt="Nikhil Appari NA Logo"
+                  width={28}
+                  height={28}
+                  className="object-contain"
+                />
+              </div>
+              <span className="text-base font-black tracking-tight text-white font-sans">
+                NA<span className="text-[#ff2a3b] ml-0.5">•</span>
+              </span>
             </div>
             <div className="text-[10px] sm:text-[11px] font-mono tracking-widest text-gray-400 uppercase flex items-center gap-2">
               <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-[#ff2a3b] animate-ping" />
