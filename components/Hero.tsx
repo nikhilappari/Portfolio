@@ -81,23 +81,19 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative w-full min-h-[100dvh] flex flex-col justify-between bg-[#07080a] text-white overflow-hidden pt-16 sm:pt-24 pb-2 sm:pb-6">
+    <section className="relative w-full min-h-[100dvh] flex flex-col justify-between bg-[#07080a] text-white overflow-hidden pt-20 sm:pt-24 pb-4 sm:pb-6">
       
-      {/* 1. Refined Crimson Red Backdrop "PORTFOLIO" */}
-      <div className="absolute top-16 sm:top-28 lg:top-20 inset-x-0 flex items-center justify-center pointer-events-none select-none z-0 px-2 sm:px-4">
-        <h1 className="text-[17vw] sm:text-[15vw] lg:text-[15vw] font-black text-[#ff2a3b]/25 sm:text-[#ff2a3b]/35 tracking-tight uppercase leading-none font-sans filter drop-shadow-[0_0_60px_rgba(255,42,59,0.25)]">
+      {/* 1. Backdrop "PORTFOLIO" */}
+      <div className="absolute top-20 sm:top-28 lg:top-20 inset-x-0 flex items-center justify-center pointer-events-none select-none z-0 px-2 sm:px-4">
+        <h1 className="text-[16vw] sm:text-[15vw] lg:text-[15vw] font-black text-[#ff2a3b]/20 sm:text-[#ff2a3b]/35 tracking-tight uppercase leading-none font-sans filter drop-shadow-[0_0_60px_rgba(255,42,59,0.25)]">
           PORTFOLIO
         </h1>
       </div>
 
-      {/* 2. HERO IMAGE - Positioned higher on mobile so head & face are completely above the text overlay */}
-      <div className="absolute inset-0 flex items-end sm:items-end justify-center pointer-events-none z-10 pt-16 sm:pt-24 lg:pt-20 pb-20 sm:pb-14 lg:pb-12">
-        <div className="relative h-[78vh] sm:h-[72vh] lg:h-[82vh] max-h-[750px] aspect-[730/1024] max-w-[95vw] sm:max-w-[85vw] flex items-end justify-center mb-16 sm:mb-0">
-          
-          {/* Subtle Ambient Rim Glow behind head & shoulders */}
-          <div className="absolute top-1/6 sm:top-1/4 left-1/2 -translate-x-1/2 w-56 sm:w-80 h-56 sm:h-80 bg-[#ff2a3b]/25 rounded-full blur-[80px] sm:blur-[85px] pointer-events-none z-0" />
-
-          {/* Stacked Crossfade: Never collapses, never leaves a blank void */}
+      {/* 2. DESKTOP DEAD-CENTERED HERO IMAGE (Keeps PC 100% untouched) */}
+      <div className="hidden lg:flex absolute inset-0 items-end justify-center pointer-events-none z-10 pt-20 pb-12">
+        <div className="relative h-[82vh] max-h-[750px] aspect-[730/1024] max-w-[85vw] flex items-end justify-center">
+          <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-80 h-80 bg-[#ff2a3b]/20 rounded-full blur-[85px] pointer-events-none z-0" />
           {HERO_IMAGES.map((img, idx) => {
             const isActive = imageIndex === idx;
             return (
@@ -117,92 +113,155 @@ export default function Hero() {
                   src={img.src}
                   alt={img.alt}
                   fill
-                  sizes="(max-width: 768px) 95vw, (max-width: 1200px) 70vw, 550px"
+                  sizes="550px"
                   className="object-contain object-bottom filter contrast-105 brightness-105 drop-shadow-[0_25px_60px_rgba(0,0,0,0.9)]"
                   priority
                 />
               </motion.div>
             );
           })}
-
-          {/* Bottom fade into dark obsidian canvas */}
-          <div className="absolute inset-x-0 bottom-0 h-40 sm:h-28 bg-gradient-to-t from-[#07080a] via-[#07080a]/90 to-transparent pointer-events-none z-20" />
+          <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-[#07080a] via-[#07080a]/80 to-transparent pointer-events-none z-20" />
         </div>
       </div>
 
-      {/* 3. Main Content Overlay Container - Compact, docked cleanly at the bottom on mobile */}
-      <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 w-full flex-1 flex flex-col justify-end lg:justify-center pointer-events-none pb-2 sm:pb-8 lg:py-2">
-        
-        {/* Content Grid: Left Editorial Details + Right Stamp & Meta */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-8 items-end lg:items-center w-full pointer-events-auto">
-          
+      {/* 3. MOBILE-OPTIMIZED STRUCTURE: Clean vertical sequence where image sits proudly on top, text below */}
+      <div className="lg:hidden flex flex-col items-center w-full z-20 px-5 pt-2 pb-4">
+        {/* Mobile Portrait Frame: Perfectly framed head & shoulders with zero text collision */}
+        <div className="relative w-full max-w-[280px] h-[40vh] min-h-[260px] max-h-[340px] flex items-end justify-center mb-4">
+          <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-48 h-48 bg-[#ff2a3b]/25 rounded-full blur-[60px] pointer-events-none z-0" />
+          {HERO_IMAGES.map((img, idx) => {
+            const isActive = imageIndex === idx;
+            return (
+              <motion.div
+                key={img.src}
+                initial={false}
+                animate={{
+                  opacity: isActive ? 1 : 0,
+                  scale: isActive ? 1 : 0.98,
+                }}
+                transition={{ duration: 0.8, ease: "easeInOut" }}
+                className={`absolute inset-0 w-full h-full flex items-end justify-center ${
+                  isActive ? "z-10" : "z-0 pointer-events-none"
+                }`}
+              >
+                <Image
+                  src={img.src}
+                  alt={img.alt}
+                  fill
+                  sizes="(max-width: 768px) 80vw, 300px"
+                  className="object-contain object-bottom filter contrast-105 brightness-105 drop-shadow-[0_15px_30px_rgba(0,0,0,0.9)]"
+                  priority
+                />
+              </motion.div>
+            );
+          })}
+          {/* Subtle bottom fade so image merges into the background */}
+          <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-[#07080a] to-transparent pointer-events-none z-20" />
+        </div>
+
+        {/* Mobile Text & CTA Section (Completely below the photo - 0% overlap) */}
+        <div className="w-full flex flex-col items-center text-center space-y-3">
+          <div className="space-y-1">
+            <span className="text-[11px] font-mono tracking-widest text-[#ff2a3b] uppercase block font-bold">
+              HI, I'M
+            </span>
+            <h2 className="text-3xl font-black tracking-tight text-white uppercase leading-none font-sans">
+              NIKHIL APPARI
+            </h2>
+          </div>
+
+          <div className="inline-flex items-center px-3 py-1 rounded-full bg-[#ff2a3b]/15 border border-[#ff2a3b]/40 text-xs">
+            <TypewriterText />
+          </div>
+
+          <p className="text-gray-300 text-xs leading-relaxed max-w-sm font-sans bg-[#0a0c12]/90 border border-white/10 rounded-2xl p-3.5 shadow-xl">
+            I’m an Artificial Intelligence & Machine Learning student passionate about building practical AI solutions, machine learning systems, and modern software applications.
+          </p>
+
+          <div className="flex flex-row items-center gap-2.5 pt-1 w-full max-w-xs">
+            <a
+              href="#work"
+              className="crimson-btn flex-1 py-3 px-3 rounded-full text-xs font-mono font-bold uppercase tracking-wider flex items-center justify-center gap-1.5 shadow-xl"
+            >
+              <span>EXPLORE PROJECTS</span>
+              <ArrowDown className="w-3.5 h-3.5" />
+            </a>
+            <a
+              href="#contact"
+              className="crimson-outline-btn flex-1 py-3 px-3 rounded-full text-xs font-mono font-bold uppercase tracking-wider flex items-center justify-center gap-1.5 bg-[#07080a]/90"
+            >
+              <span>GET IN TOUCH</span>
+              <ArrowUpRight className="w-3.5 h-3.5 text-[#ff2a3b]" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {/* 4. DESKTOP MAIN CONTENT OVERLAY CONTAINER (100% Original Desktop Layout) */}
+      <div className="hidden lg:flex relative z-20 max-w-7xl mx-auto px-12 w-full flex-1 flex-col justify-center pointer-events-none py-2">
+        <div className="grid grid-cols-12 gap-8 items-center w-full pointer-events-auto">
           {/* LEFT COLUMN: Hi I'm + Name + Role + Bio + Action CTAs */}
-          <div className="lg:col-span-6 flex flex-col items-start text-left space-y-2 sm:space-y-4 z-30">
+          <div className="col-span-6 flex flex-col items-start text-left space-y-4 z-30">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="space-y-0.5 sm:space-y-1"
+              className="space-y-1"
             >
-              <span className="text-[10px] sm:text-sm font-mono tracking-widest text-[#ff2a3b] uppercase block font-bold">
+              <span className="text-sm font-mono tracking-widest text-[#ff2a3b] uppercase block font-bold">
                 HI, I'M
               </span>
-              <h2 className="text-2xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white uppercase leading-[0.98] font-sans drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]">
+              <h2 className="text-6xl font-black tracking-tight text-white uppercase leading-[0.98] font-sans">
                 NIKHIL <br />
                 <span className="text-white">APPARI</span>
               </h2>
             </motion.div>
 
-            {/* Dynamic Typewriter Role */}
             <motion.div
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="inline-flex items-center px-2.5 py-1 sm:px-3.5 sm:py-1.5 rounded-full bg-[#ff2a3b]/15 border border-[#ff2a3b]/40 backdrop-blur-md text-[10px] sm:text-xs"
+              className="inline-flex items-center px-3.5 py-1.5 rounded-full bg-[#ff2a3b]/10 border border-[#ff2a3b]/30 backdrop-blur-md text-xs"
             >
               <TypewriterText />
             </motion.div>
 
-            {/* Subtext Paragraph - Clean semi-transparent card on mobile */}
             <motion.p
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-gray-300 text-[11px] sm:text-[13px] max-w-sm leading-relaxed font-sans bg-[#07080a]/85 backdrop-blur-md px-3 py-2 sm:px-4 sm:py-3 rounded-xl border border-white/10 shadow-lg"
+              className="text-gray-300 text-[13px] max-w-sm leading-relaxed font-sans bg-[#07080a]/90 backdrop-blur-md px-4 py-3 rounded-xl border border-white/10 shadow-lg"
             >
-              I’m an Artificial Intelligence & Machine Learning student passionate about building practical AI solutions across ML, software development, and backend systems.
+              I’m an Artificial Intelligence & Machine Learning student passionate about building practical AI solutions. I work across machine learning, software development, backend systems, and modern development tools to turn ideas into useful applications.
             </motion.p>
 
-            {/* Action Buttons - Compact on mobile */}
             <motion.div
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="flex flex-row items-center gap-2 sm:gap-3 pt-0.5 w-full sm:w-auto"
+              className="flex flex-row items-center gap-3 pt-1"
             >
               <a
                 href="#work"
-                className="crimson-btn flex-1 sm:flex-initial px-3.5 sm:px-6 py-2.5 sm:py-3 rounded-full text-[10px] sm:text-xs font-mono font-bold uppercase tracking-wider flex items-center justify-center gap-1 sm:gap-2 shadow-xl hover:scale-105 transition-transform"
+                className="crimson-btn px-6 py-3 rounded-full text-xs font-mono font-bold uppercase tracking-wider flex items-center justify-center gap-2 shadow-xl hover:scale-105 transition-transform"
               >
                 <span>EXPLORE PROJECTS</span>
-                <ArrowDown className="w-3 h-3 sm:w-3.5 sm:h-3.5" />
+                <ArrowDown className="w-3.5 h-3.5" />
               </a>
 
               <a
                 href="#contact"
-                className="crimson-outline-btn flex-1 sm:flex-initial px-3.5 sm:px-5 py-2.5 sm:py-3 rounded-full text-[10px] sm:text-xs font-mono font-bold uppercase tracking-wider flex items-center justify-center gap-1 sm:gap-2 bg-[#07080a]/85 backdrop-blur-md"
+                className="crimson-outline-btn px-5 py-3 rounded-full text-xs font-mono font-bold uppercase tracking-wider flex items-center justify-center gap-2 bg-[#07080a]/85 backdrop-blur-md"
               >
                 <span>GET IN TOUCH</span>
-                <ArrowUpRight className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-[#ff2a3b]" />
+                <ArrowUpRight className="w-3.5 h-3.5 text-[#ff2a3b]" />
               </a>
             </motion.div>
           </div>
 
-          {/* RIGHT COLUMN: Unified Stamp Badge + Metadata Box (Cleanly Paired) */}
-          <div className="hidden lg:flex lg:col-span-6 flex-col items-end justify-center gap-4 z-30 pointer-events-auto">
-            
-            {/* Spinning Circular Stamp Badge */}
-            <div className="relative w-24 h-24 sm:w-28 sm:h-28 flex items-center justify-center">
+          {/* RIGHT COLUMN: Unified Stamp Badge + Metadata Box */}
+          <div className="col-span-6 flex flex-col items-end justify-center gap-4 z-30 pointer-events-auto">
+            <div className="relative w-28 h-28 flex items-center justify-center">
               <svg
                 className="w-full h-full animate-spin-slow"
                 viewBox="0 0 100 100"
@@ -218,7 +277,6 @@ export default function Hero() {
                   </textPath>
                 </text>
               </svg>
-              {/* Center Badge Core with Red Glow and Brush NA Logo */}
               <div className="absolute w-12 h-12 rounded-full bg-[#ff2a3b] text-white flex items-center justify-center p-2 shadow-[0_0_22px_rgba(255,42,59,0.7)]">
                 <Image
                   src="/na-brush-white.png"
@@ -230,7 +288,6 @@ export default function Hero() {
               </div>
             </div>
 
-            {/* Right Meta Info Block (Based In, Education, Focus, Available) */}
             <div className="flex flex-col gap-2 text-right font-mono text-xs border-r-2 border-[#ff2a3b] pr-4 py-3 pl-5 bg-[#07080a]/90 backdrop-blur-md rounded-l-2xl border-l border-y border-white/10 shadow-2xl">
               <div>
                 <span className="text-gray-400 block text-[10px] uppercase tracking-widest font-bold">BASED IN</span>
@@ -252,7 +309,6 @@ export default function Hero() {
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </div>
