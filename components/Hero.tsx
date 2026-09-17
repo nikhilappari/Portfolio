@@ -130,8 +130,8 @@ export default function Hero() {
         <div className="relative w-full h-[46vh] min-h-[310px] max-h-[400px] flex items-end justify-center mb-4 overflow-visible">
           
           {/* Large Layered "PORTFOLIO" Backdrop: Starts around upper section and extends down behind head and upper body */}
-          <div className="absolute top-2 sm:top-4 inset-x-0 w-full px-2.5 flex items-center justify-center pointer-events-none select-none z-0">
-            <h1 className="text-[15.5vw] min-[380px]:text-[16.5vw] font-black text-[#ff2a3b]/45 tracking-tight uppercase leading-none font-sans filter drop-shadow-[0_0_35px_rgba(255,42,59,0.6)] whitespace-nowrap select-none scale-y-[2.5] origin-top">
+          <div className="absolute top-2 sm:top-4 inset-x-0 w-full px-1.5 flex items-center justify-center pointer-events-none select-none z-0">
+            <h1 className="text-[17.2vw] min-[380px]:text-[18.2vw] font-black text-[#ff2a3b]/45 tracking-tight uppercase leading-none font-sans filter drop-shadow-[0_0_35px_rgba(255,42,59,0.6)] whitespace-nowrap select-none scale-y-[2.35] origin-top">
               PORTFOLIO
             </h1>
           </div>
