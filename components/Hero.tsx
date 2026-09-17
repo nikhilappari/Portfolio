@@ -129,15 +129,15 @@ export default function Hero() {
         {/* Mobile Portrait Frame with massive full-width PORTFOLIO typography directly in the background */}
         <div className="relative w-full h-[46vh] min-h-[310px] max-h-[400px] flex items-end justify-center mb-4 overflow-visible">
           
-          {/* Tall, Elaborate "PORTFOLIO" Backdrop with 100% complete width visibility (P to O clearly visible) and increased vertical height */}
-          <div className="absolute top-2 inset-x-0 w-full px-2 flex items-center justify-center pointer-events-none select-none z-0">
-            <h1 className="text-[19.5vw] font-black text-[#ff2a3b]/55 tracking-tight uppercase leading-none font-sans filter drop-shadow-[0_0_35px_rgba(255,42,59,0.65)] whitespace-nowrap select-none scale-y-[1.6] origin-top">
+          {/* Layered "PORTFOLIO" Backdrop positioned directly behind head and shoulders */}
+          <div className="absolute -top-4 sm:-top-6 inset-x-0 w-full px-3 flex items-center justify-center pointer-events-none select-none z-0">
+            <h1 className="text-[16.5vw] font-black text-[#ff2a3b]/45 tracking-tight uppercase leading-none font-sans filter drop-shadow-[0_0_30px_rgba(255,42,59,0.55)] whitespace-nowrap select-none">
               PORTFOLIO
             </h1>
           </div>
 
           {/* Ambient Rim Glow behind head & shoulders */}
-          <div className="absolute top-8 left-1/2 -translate-x-1/2 w-64 h-64 bg-[#ff2a3b]/35 rounded-full blur-[80px] pointer-events-none z-0" />
+          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-64 h-64 bg-[#ff2a3b]/30 rounded-full blur-[80px] pointer-events-none z-0" />
           {HERO_IMAGES.map((img, idx) => {
             const isActive = imageIndex === idx;
             return (
