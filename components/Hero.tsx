@@ -129,9 +129,9 @@ export default function Hero() {
         {/* Mobile Portrait Frame with massive full-width PORTFOLIO typography directly in the background */}
         <div className="relative w-full h-[46vh] min-h-[310px] max-h-[400px] flex items-end justify-center mb-4 overflow-visible">
           
-          {/* Layered "PORTFOLIO" Backdrop positioned directly behind head and shoulders */}
-          <div className="absolute -top-4 sm:-top-6 inset-x-0 w-full px-3 flex items-center justify-center pointer-events-none select-none z-0">
-            <h1 className="text-[16.5vw] font-black text-[#ff2a3b]/45 tracking-tight uppercase leading-none font-sans filter drop-shadow-[0_0_30px_rgba(255,42,59,0.55)] whitespace-nowrap select-none">
+          {/* Large Layered "PORTFOLIO" Backdrop: Starts around upper section and extends down behind head and upper body */}
+          <div className="absolute top-2 sm:top-4 inset-x-0 w-full px-2.5 flex items-center justify-center pointer-events-none select-none z-0">
+            <h1 className="text-[15.5vw] min-[380px]:text-[16.5vw] font-black text-[#ff2a3b]/45 tracking-tight uppercase leading-none font-sans filter drop-shadow-[0_0_35px_rgba(255,42,59,0.6)] whitespace-nowrap select-none scale-y-[2.5] origin-top">
               PORTFOLIO
             </h1>
           </div>
