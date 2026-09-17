@@ -60,9 +60,9 @@ export default function Navbar() {
       />
 
       {/* Top Banner Line */}
-      <div className="border-b border-white/5 py-2 px-6 text-[11px] font-mono tracking-widest uppercase flex items-center justify-between text-gray-400">
+      <div className="border-b border-white/5 py-1 sm:py-2 px-4 sm:px-6 text-[10px] sm:text-[11px] font-mono tracking-widest uppercase flex items-center justify-between text-gray-400">
         <span className="text-[#ff2a3b] font-bold flex items-center gap-2">
-          <span className="w-2 h-2 rounded-full bg-[#ff2a3b] animate-ping" />
+          <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-[#ff2a3b] animate-ping" />
           <span>AI / ML ENTHUSIAST</span>
         </span>
 
@@ -76,7 +76,7 @@ export default function Navbar() {
       </div>
 
       {/* Main Navbar - Clean matched layout matching user image */}
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-4 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 py-1.5 sm:py-4 flex items-center justify-between">
         {/* Brand Logo: Brush NA logo with crimson dot */}
         <Link
           href="#"
@@ -85,12 +85,12 @@ export default function Navbar() {
           <Image
             src="/na-brush-logo.png"
             alt="Nikhil Appari NA Logo"
-            width={48}
-            height={34}
+            width={44}
+            height={30}
             priority
-            className="object-contain h-7 sm:h-8 w-auto filter drop-shadow-[0_0_10px_rgba(255,42,59,0.3)] group-hover:scale-105 transition-transform"
+            className="object-contain h-6 sm:h-8 w-auto filter drop-shadow-[0_0_10px_rgba(255,42,59,0.3)] group-hover:scale-105 transition-transform"
           />
-          <span className="text-[#ff2a3b] text-2xl sm:text-3xl leading-none ml-1">•</span>
+          <span className="text-[#ff2a3b] text-xl sm:text-3xl leading-none ml-0.5">•</span>
         </Link>
 
         {/* Desktop Navigation Links with active section detection */}
@@ -136,10 +136,10 @@ export default function Navbar() {
         {/* Mobile Menu Button */}
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="md:hidden p-2 text-gray-300 hover:text-white"
+          className="md:hidden p-1.5 text-gray-300 hover:text-white"
           aria-label="Toggle Navigation Menu"
         >
-          {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
         </button>
       </div>
 

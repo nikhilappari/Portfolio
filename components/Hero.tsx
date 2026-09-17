@@ -81,7 +81,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative w-full min-h-[100dvh] flex flex-col justify-between bg-[#07080a] text-white overflow-hidden pt-20 sm:pt-24 pb-4 sm:pb-6">
+    <section className="relative w-full min-h-[100dvh] flex flex-col justify-between bg-[#07080a] text-white overflow-hidden pt-14 sm:pt-24 pb-4 sm:pb-6">
       
       {/* 1. Backdrop "PORTFOLIO" for Desktop */}
       <div className="hidden lg:flex absolute top-20 inset-x-0 items-center justify-center pointer-events-none select-none z-0 px-4">
