@@ -138,36 +138,6 @@ export default function Hero() {
 
           {/* Ambient Rim Glow behind head & shoulders */}
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-64 h-64 bg-[#ff2a3b]/30 rounded-full blur-[80px] pointer-events-none z-0" />
-
-          {/* Circular NA Stamp Badge (matching desktop design & animation, positioned near head/upper background area) */}
-          <div className="absolute top-1 right-2 min-[360px]:right-4 sm:top-2 sm:right-8 z-20 pointer-events-auto">
-            <div className="relative w-[76px] h-[76px] min-[360px]:w-20 min-[360px]:h-20 sm:w-24 sm:h-24 flex items-center justify-center">
-              <svg
-                className="w-full h-full animate-spin-slow"
-                viewBox="0 0 100 100"
-              >
-                <path
-                  id="mobileTextPath"
-                  d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0"
-                  fill="none"
-                />
-                <text className="text-[9.5px] font-mono fill-gray-300 uppercase tracking-widest font-bold">
-                  <textPath href="#mobileTextPath">
-                    BUILDING AI SYSTEMS THAT SCALE • NA •
-                  </textPath>
-                </text>
-              </svg>
-              <div className="absolute w-8 h-8 min-[360px]:w-9 min-[360px]:h-9 sm:w-11 sm:h-11 rounded-full bg-[#ff2a3b] text-white flex items-center justify-center p-1.5 sm:p-2 shadow-[0_0_20px_rgba(255,42,59,0.75)]">
-                <Image
-                  src="/na-brush-white.png"
-                  alt="NA Logo"
-                  width={24}
-                  height={19}
-                  className="w-[18px] h-[14px] min-[360px]:w-[20px] min-[360px]:h-[16px] sm:w-[24px] sm:h-[19px] object-contain filter drop-shadow-[0_1px_3px_rgba(0,0,0,0.5)]"
-                />
-              </div>
-            </div>
-          </div>
           {HERO_IMAGES.map((img, idx) => {
             const isActive = imageIndex === idx;
             return (
