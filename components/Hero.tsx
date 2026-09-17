@@ -129,15 +129,15 @@ export default function Hero() {
         {/* Mobile Portrait Frame with PORTFOLIO typography directly in the background */}
         <div className="relative w-full max-w-[340px] h-[44vh] min-h-[290px] max-h-[380px] flex items-end justify-center mb-4">
           
-          {/* Vibrant "PORTFOLIO" Text in Mobile Background right behind head/shoulders */}
-          <div className="absolute top-4 inset-x-0 flex items-center justify-center pointer-events-none select-none z-0">
-            <span className="text-[17vw] font-black text-[#ff2a3b]/45 tracking-tight uppercase leading-none font-sans filter drop-shadow-[0_0_35px_rgba(255,42,59,0.5)]">
+          {/* Bold, Full-Width "PORTFOLIO" Backdrop spanning across the entire mobile screen */}
+          <div className="absolute top-1 sm:top-2 -inset-x-12 flex items-center justify-center pointer-events-none select-none z-0">
+            <span className="text-[23vw] font-black text-[#ff2a3b]/40 tracking-tighter uppercase leading-none font-sans filter drop-shadow-[0_0_40px_rgba(255,42,59,0.55)] whitespace-nowrap">
               PORTFOLIO
             </span>
           </div>
 
           {/* Ambient Rim Glow behind head */}
-          <div className="absolute top-1/6 left-1/2 -translate-x-1/2 w-56 h-56 bg-[#ff2a3b]/30 rounded-full blur-[70px] pointer-events-none z-0" />
+          <div className="absolute top-1/6 left-1/2 -translate-x-1/2 w-64 h-64 bg-[#ff2a3b]/30 rounded-full blur-[75px] pointer-events-none z-0" />
           {HERO_IMAGES.map((img, idx) => {
             const isActive = imageIndex === idx;
             return (
