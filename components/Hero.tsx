@@ -83,9 +83,9 @@ export default function Hero() {
   return (
     <section className="relative w-full min-h-[100dvh] flex flex-col justify-between bg-[#07080a] text-white overflow-hidden pt-20 sm:pt-24 pb-4 sm:pb-6">
       
-      {/* 1. Backdrop "PORTFOLIO" */}
-      <div className="absolute top-20 sm:top-28 lg:top-20 inset-x-0 flex items-center justify-center pointer-events-none select-none z-0 px-2 sm:px-4">
-        <h1 className="text-[16vw] sm:text-[15vw] lg:text-[15vw] font-black text-[#ff2a3b]/20 sm:text-[#ff2a3b]/35 tracking-tight uppercase leading-none font-sans filter drop-shadow-[0_0_60px_rgba(255,42,59,0.25)]">
+      {/* 1. Backdrop "PORTFOLIO" for Desktop */}
+      <div className="hidden lg:flex absolute top-20 inset-x-0 items-center justify-center pointer-events-none select-none z-0 px-4">
+        <h1 className="text-[15vw] font-black text-[#ff2a3b]/35 tracking-tight uppercase leading-none font-sans filter drop-shadow-[0_0_60px_rgba(255,42,59,0.25)]">
           PORTFOLIO
         </h1>
       </div>
@@ -124,11 +124,20 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* 3. MOBILE-OPTIMIZED STRUCTURE: Clean vertical sequence where image sits proudly on top, text below */}
-      <div className="lg:hidden flex flex-col items-center w-full z-20 px-5 pt-2 pb-4">
-        {/* Mobile Portrait Frame: Perfectly framed head & shoulders with zero text collision */}
-        <div className="relative w-full max-w-[280px] h-[40vh] min-h-[260px] max-h-[340px] flex items-end justify-center mb-4">
-          <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-48 h-48 bg-[#ff2a3b]/25 rounded-full blur-[60px] pointer-events-none z-0" />
+      {/* 3. MOBILE-OPTIMIZED STRUCTURE: Clean vertical sequence with PORTFOLIO glowing prominently behind the portrait */}
+      <div className="lg:hidden flex flex-col items-center w-full z-20 px-5 pt-3 pb-4">
+        {/* Mobile Portrait Frame with PORTFOLIO typography directly in the background */}
+        <div className="relative w-full max-w-[340px] h-[44vh] min-h-[290px] max-h-[380px] flex items-end justify-center mb-4">
+          
+          {/* Vibrant "PORTFOLIO" Text in Mobile Background right behind head/shoulders */}
+          <div className="absolute top-4 inset-x-0 flex items-center justify-center pointer-events-none select-none z-0">
+            <span className="text-[17vw] font-black text-[#ff2a3b]/45 tracking-tight uppercase leading-none font-sans filter drop-shadow-[0_0_35px_rgba(255,42,59,0.5)]">
+              PORTFOLIO
+            </span>
+          </div>
+
+          {/* Ambient Rim Glow behind head */}
+          <div className="absolute top-1/6 left-1/2 -translate-x-1/2 w-56 h-56 bg-[#ff2a3b]/30 rounded-full blur-[70px] pointer-events-none z-0" />
           {HERO_IMAGES.map((img, idx) => {
             const isActive = imageIndex === idx;
             return (
