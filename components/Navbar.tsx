@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion, useScroll, useSpring } from "framer-motion";
 import { ArrowUpRight, Menu, X } from "lucide-react";
 import { PERSONAL_INFO } from "@/data/portfolioData";
@@ -76,13 +77,20 @@ export default function Navbar() {
 
       {/* Main Navbar - Clean matched layout matching user image */}
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-4 flex items-center justify-between">
-        {/* Brand Logo: NA. with crimson dot matching user monogram */}
+        {/* Brand Logo: Brush NA logo with crimson dot */}
         <Link
           href="#"
-          className="text-2xl font-black tracking-tighter text-white font-sans flex items-center group select-none"
+          className="flex items-center gap-1 group select-none py-0.5"
         >
-          <span className="group-hover:text-gray-200 transition-colors">NA</span>
-          <span className="text-[#ff2a3b] text-3xl leading-none ml-0.5">•</span>
+          <Image
+            src="/na-brush-logo.png"
+            alt="Nikhil Appari NA Logo"
+            width={48}
+            height={34}
+            priority
+            className="object-contain h-7 sm:h-8 w-auto filter drop-shadow-[0_0_10px_rgba(255,42,59,0.3)] group-hover:scale-105 transition-transform"
+          />
+          <span className="text-[#ff2a3b] text-2xl sm:text-3xl leading-none ml-1">•</span>
         </Link>
 
         {/* Desktop Navigation Links with active section detection */}
