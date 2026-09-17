@@ -98,16 +98,16 @@ export default function Preloader({ onComplete }: PreloaderProps) {
 
           {/* Top Bar: Brand Logo & Status */}
           <div className="flex items-center justify-between z-10 w-full">
-            <div className="flex items-center gap-1">
+            <div className="flex items-center gap-1.5">
               <Image
                 src="/na-brush-logo.png"
                 alt="Nikhil Appari NA Logo"
-                width={52}
-                height={38}
+                width={80}
+                height={58}
                 priority
-                className="object-contain h-7 sm:h-9 w-auto filter drop-shadow-[0_0_12px_rgba(255,42,59,0.35)]"
+                className="object-contain h-10 sm:h-12 w-auto filter drop-shadow-[0_0_15px_rgba(255,42,59,0.45)]"
               />
-              <span className="text-[#ff2a3b] text-xl sm:text-2xl leading-none ml-1">•</span>
+              <span className="text-[#ff2a3b] text-2xl sm:text-3xl leading-none ml-1 font-bold">•</span>
             </div>
             <div className="text-[10px] sm:text-[11px] font-mono tracking-widest text-gray-400 uppercase flex items-center gap-2">
               <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-[#ff2a3b] animate-ping" />
