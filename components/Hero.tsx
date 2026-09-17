@@ -179,7 +179,7 @@ export default function Hero() {
                   d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0"
                   fill="none"
                 />
-                <text className="text-[8.8px] font-mono fill-gray-300 uppercase tracking-wider font-bold">
+                <text className="text-[9.25px] font-mono fill-gray-300 uppercase tracking-widest font-bold">
                   <textPath href="#mobileBadgePath">
                     {"BUILDING AI SYSTEMS THAT SCALE • NA • "}
                   </textPath>
@@ -310,7 +310,7 @@ export default function Hero() {
                   d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0"
                   fill="none"
                 />
-                <text className="text-[8.8px] font-mono fill-gray-300 uppercase tracking-wider font-bold">
+                <text className="text-[9.25px] font-mono fill-gray-300 uppercase tracking-widest font-bold">
                   <textPath href="#textPath">
                     {"BUILDING AI SYSTEMS THAT SCALE • NA • "}
                   </textPath>
