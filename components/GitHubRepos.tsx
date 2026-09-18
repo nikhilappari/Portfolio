@@ -73,7 +73,7 @@ export default function GitHubRepos() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-[#ff2a3b]/10 text-[#ff2a3b] text-xs font-mono border border-[#ff2a3b]/30 hover:bg-[#ff2a3b] hover:text-white transition-colors"
             >
-              <span>@007VICKY007</span>
+              <span>@{PERSONAL_INFO.githubUsername}</span>
               <ExternalLink className="w-3.5 h-3.5" />
             </a>
           </div>

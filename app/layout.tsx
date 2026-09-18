@@ -12,7 +12,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://nikhilappari.dev"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://nikhilappari.vercel.app"),
   title: `${PERSONAL_INFO.name} — ${PERSONAL_INFO.role}`,
   description:
     "Artificial Intelligence & Machine Learning student passionate about building practical AI solutions, machine learning, backend systems, and modern web applications.",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     title: `${PERSONAL_INFO.name} — ${PERSONAL_INFO.role}`,
     description:
       "Artificial Intelligence & Machine Learning student passionate about building practical AI solutions, machine learning, backend systems, and modern web applications.",
-    url: "https://nikhilappari.dev",
+    url: "https://nikhilappari.vercel.app",
     siteName: `${PERSONAL_INFO.name} Portfolio`,
     locale: "en_US",
     type: "website",

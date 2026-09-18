@@ -32,7 +32,7 @@
 
 ### 5. Parallax System (GSAP ScrollTrigger)
 - **Layers**: Background (0.3x), Midground (0.5x), Foreground (0.8x)
-- **Hero Video**: Slow zoom (1.0→1.15) on scroll
+- **Hero Portrait**: Subtle parallax and smooth transitions
 - **Portrait**: Subtle Y-parallax (0.2x) in About section
 
 ### 6. Card Hover System (Framer Motion)
@@ -53,7 +53,7 @@
 ### HERO (Cinematic Entry)
 | Element | Animation | Trigger | Duration |
 |---------|-----------|---------|----------|
-| Video | Slow zoom 1.0→1.15 | Scroll (0-50vh) | Continuous |
+| Hero Image | Smooth transition and parallax | Mount & Scroll | Continuous |
 | Status Pill | fadeUp + scale | Mount | 0.6s |
 | Headline | wordReveal (stagger 0.04) | Mount | 1.0s |
 | Subtitle | blurReveal | Mount + 0.2s | 0.8s |

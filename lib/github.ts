@@ -18,7 +18,7 @@ export async function fetchGitHubRepos(username: string): Promise<GitHubRepo[]> 
       next: { revalidate: 3600 }, // Cache for 1 hour
       headers: {
         Accept: "application/vnd.github.v3+json",
-        "User-Agent": "Vignesh-Portfolio-App",
+        "User-Agent": "Nikhil-Portfolio-App",
       },
     });
 
@@ -97,78 +97,77 @@ export async function fetchGitHubRepos(username: string): Promise<GitHubRepo[]> 
 
 function getRepoFallbackDescription(name: string): string {
   const map: Record<string, string> = {
-    "Airline-Call-Center-Agent": "Multi-agent customer service triage system with automated KPI reporting.",
-    "AI_Powered_IDS": "Edge cybersecurity intrusion detection system running TFLite ML models.",
-    "Building-A-New-MCP-Server": "Model Context Protocol server implementation for external tool integration.",
-    "Cyber-Intelligence-Defense-System": "Cyber threat analysis and automated anomaly intelligence suite.",
-    "Data-Management-Platform": "Scalable data ingestion and management system for AI pipelines.",
-    "Binary-Classification---Sentiment": "Natural language sentiment classification model pipeline.",
+    "LandSure": "AI-based system for digitizing land records from scanned documents and automated validation.",
+    "DelayLands": "Predictive analytics platform identifying delay factors in acquisition projects.",
+    "Attendance-System": "C++ console-based application for recording and managing student attendance using file handling.",
+    "aesthetic_by_nikhil": "Personal artwork showcase and custom sketch commission platform.",
+    "Portfolio": "Modern cinematic developer portfolio built with Next.js, TypeScript, and Tailwind CSS.",
   };
 
-  return map[name] || "Repository developed by Vignesh Pandiya G.";
+  return map[name] || "Repository developed by Nikhil Appari.";
 }
 
 export function getFallbackRepos(): GitHubRepo[] {
   return [
     {
       id: 1,
-      name: "Airline-Call-Center-Agent",
-      full_name: "007VICKY007/Airline-Call-Center-Agent",
-      html_url: "https://github.com/007VICKY007/Airline-Call-Center-Agent",
-      description: "Multi-agent customer service triage system with automated KPI reporting.",
+      name: "LandSure",
+      full_name: "nikhilappari/LandSure",
+      html_url: "https://github.com/nikhilappari/LandSure",
+      description: "AI-based system for digitizing land records from scanned documents and automated validation.",
       language: "Python",
       stargazers_count: 0,
       forks_count: 0,
       updated_at: new Date().toISOString(),
-      category: "Agents",
+      category: "AI",
     },
     {
       id: 2,
-      name: "AI_Powered_IDS",
-      full_name: "007VICKY007/AI_Powered_IDS",
-      html_url: "https://github.com/007VICKY007/AI_Powered_IDS",
-      description: "Edge cybersecurity intrusion detection system running TFLite ML models.",
-      language: "Python",
-      stargazers_count: 0,
-      forks_count: 0,
-      updated_at: new Date().toISOString(),
-      category: "Security",
-    },
-    {
-      id: 3,
-      name: "Building-A-New-MCP-Server",
-      full_name: "007VICKY007/Building-A-New-MCP-Server",
-      html_url: "https://github.com/007VICKY007/Building-A-New-MCP-Server",
-      description: "Model Context Protocol server implementation for AI agent tool integration.",
-      language: "Python",
-      stargazers_count: 0,
-      forks_count: 0,
-      updated_at: new Date().toISOString(),
-      category: "RAG",
-    },
-    {
-      id: 4,
-      name: "Cyber-Intelligence-Defense-System",
-      full_name: "007VICKY007/Cyber-Intelligence-Defense-System",
-      html_url: "https://github.com/007VICKY007/Cyber-Intelligence-Defense-System",
-      description: "Cyber threat analysis and automated anomaly intelligence suite.",
-      language: "Jupyter Notebook",
-      stargazers_count: 0,
-      forks_count: 0,
-      updated_at: new Date().toISOString(),
-      category: "Security",
-    },
-    {
-      id: 5,
-      name: "Data-Management-Platform",
-      full_name: "007VICKY007/Data-Management-Platform",
-      html_url: "https://github.com/007VICKY007/Data-Management-Platform",
-      description: "Scalable data ingestion and management system for AI pipelines.",
+      name: "DelayLands",
+      full_name: "nikhilappari/DelayLands",
+      html_url: "https://github.com/nikhilappari/DelayLands",
+      description: "Predictive analytics platform analyzing land acquisition data and identifying delay factors.",
       language: "Python",
       stargazers_count: 0,
       forks_count: 0,
       updated_at: new Date().toISOString(),
       category: "Python",
+    },
+    {
+      id: 3,
+      name: "Attendance-System",
+      full_name: "nikhilappari/Attendance-System",
+      html_url: "https://github.com/nikhilappari/Attendance-System",
+      description: "C++ console-based application for recording and managing student attendance using file handling.",
+      language: "C++",
+      stargazers_count: 0,
+      forks_count: 0,
+      updated_at: new Date().toISOString(),
+      category: "Other",
+    },
+    {
+      id: 4,
+      name: "aesthetic_by_nikhil",
+      full_name: "nikhilappari/aesthetic_by_nikhil",
+      html_url: "https://github.com/nikhilappari/aesthetic_by_nikhil",
+      description: "Personal artwork showcase & custom sketch commission platform.",
+      language: "JavaScript",
+      stargazers_count: 0,
+      forks_count: 0,
+      updated_at: new Date().toISOString(),
+      category: "Web",
+    },
+    {
+      id: 5,
+      name: "Portfolio",
+      full_name: "nikhilappari/Portfolio",
+      html_url: "https://github.com/nikhilappari/Portfolio",
+      description: "Modern cinematic developer portfolio built with Next.js, TypeScript, and Tailwind CSS.",
+      language: "TypeScript",
+      stargazers_count: 0,
+      forks_count: 0,
+      updated_at: new Date().toISOString(),
+      category: "Web",
     },
   ];
 }
