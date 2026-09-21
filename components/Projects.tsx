@@ -59,7 +59,10 @@ export default function Projects() {
                   </span>
                 </div>
 
-                <h3 className="text-lg font-black uppercase tracking-tight text-white mb-1 group-hover:text-[#ff2a3b] transition-colors">
+                <h3
+                  onClick={() => setSelectedProject(project)}
+                  className="text-lg font-black uppercase tracking-tight text-white mb-1 group-hover:text-[#ff2a3b] transition-colors cursor-pointer"
+                >
                   {project.title}
                 </h3>
 
@@ -85,19 +88,21 @@ export default function Projects() {
               </div>
 
               {/* Action Button */}
-              <div className="pt-4 border-t border-white/10 flex items-center justify-between">
-                <button
-                  onClick={() => setSelectedProject(project)}
-                  className="inline-flex items-center gap-2 text-xs font-mono text-gray-300 group-hover:text-[#ff2a3b] font-bold transition-colors"
-                >
-                  <FileText className="w-3.5 h-3.5" />
+              <button
+                type="button"
+                onClick={() => setSelectedProject(project)}
+                className="pt-4 border-t border-white/10 flex items-center justify-between w-full text-left group/btn cursor-pointer"
+                aria-label={`Open case study for ${project.title}`}
+              >
+                <span className="inline-flex items-center gap-2 text-xs font-mono text-gray-300 group-hover:text-[#ff2a3b] group-hover/btn:text-[#ff2a3b] font-bold transition-colors">
+                  <FileText className="w-3.5 h-3.5 text-[#ff2a3b]" />
                   <span>CASE STUDY</span>
-                </button>
+                </span>
 
-                <div className="w-8 h-8 rounded-full bg-white/5 group-hover:bg-[#ff2a3b] group-hover:text-white text-gray-400 flex items-center justify-center transition-colors">
-                  <ArrowRight className="w-4 h-4" />
-                </div>
-              </div>
+                <span className="w-8 h-8 rounded-full bg-white/5 group-hover:bg-[#ff2a3b] group-hover/btn:bg-[#ff2a3b] group-hover:text-white group-hover/btn:text-white text-gray-400 flex items-center justify-center transition-all duration-200">
+                  <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-0.5 transition-transform" />
+                </span>
+              </button>
             </motion.div>
           ))}
         </div>
