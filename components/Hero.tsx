@@ -85,7 +85,7 @@ export default function Hero() {
       
       {/* 1. Backdrop "PORTFOLIO" for Desktop (Calibrated so left 'P' and right 'O' are 100% visible) */}
       <div className="hidden lg:flex absolute top-32 xl:top-36 2xl:top-40 inset-x-0 items-center justify-center pointer-events-none select-none z-0 px-2 sm:px-4 lg:px-6 w-full overflow-hidden filter drop-shadow-[0_12px_28px_rgba(0,0,0,0.6)]">
-        <h1 className="font-portfolio text-[20vw] xl:text-[20.8vw] 2xl:text-[21.5vw] font-normal uppercase leading-none tracking-[-0.025em] whitespace-nowrap select-none transform scale-x-[1.05] scale-y-[1.12] origin-center bg-gradient-to-b from-[#e01b36] from-0% via-[#860b19] via-40% to-[#140205] to-80% bg-clip-text text-transparent">
+        <h1 className="font-portfolio text-[20vw] xl:text-[20.8vw] 2xl:text-[21.5vw] font-normal uppercase leading-none tracking-[-0.025em] whitespace-nowrap select-none transform scale-x-[1.05] scale-y-[1.12] origin-center bg-gradient-to-b from-[#e01b36] from-0% via-[#860b19] via-40% to-[#140205] to-82% bg-clip-text text-transparent">
           PORTFOLIO
         </h1>
       </div>
@@ -128,7 +128,7 @@ export default function Hero() {
       <div className="lg:hidden flex flex-col items-center w-full z-20 pt-2 pb-4">
         <div className="relative w-full h-[46vh] min-h-[310px] max-h-[400px] flex items-end justify-center mb-4 overflow-visible">
           <div className="absolute top-2 sm:top-4 inset-x-0 w-full px-0.5 flex items-center justify-center pointer-events-none select-none z-0 overflow-hidden filter drop-shadow-[0_8px_18px_rgba(0,0,0,0.6)]">
-            <h1 className="font-portfolio text-[21vw] min-[380px]:text-[22vw] font-normal uppercase leading-none tracking-[-0.025em] whitespace-nowrap select-none scale-x-[1.06] scale-y-[1.65] origin-top bg-gradient-to-b from-[#e01b36] from-0% via-[#860b19] via-40% to-[#140205] to-80% bg-clip-text text-transparent">
+            <h1 className="font-portfolio text-[21vw] min-[380px]:text-[22vw] font-normal uppercase leading-none tracking-[-0.025em] whitespace-nowrap select-none scale-x-[1.06] scale-y-[1.65] origin-top bg-gradient-to-b from-[#e01b36] from-0% via-[#860b19] via-40% to-[#140205] to-82% bg-clip-text text-transparent">
               PORTFOLIO
             </h1>
           </div>
