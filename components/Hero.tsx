@@ -84,8 +84,8 @@ export default function Hero() {
     <section className="relative w-full min-h-[100dvh] flex flex-col justify-between bg-[#07080a] text-white overflow-hidden pt-14 sm:pt-20 lg:pt-24 pb-2 sm:pb-4">
       
       {/* 1. Backdrop "PORTFOLIO" for Desktop (Calibrated so left 'P' and right 'O' are 100% visible) */}
-      <div className="hidden lg:flex absolute top-24 xl:top-28 2xl:top-32 inset-x-0 items-center justify-center pointer-events-none select-none z-0 px-4 sm:px-6 lg:px-8 w-full overflow-hidden">
-        <h1 className="font-portfolio text-[18.2vw] xl:text-[18.8vw] 2xl:text-[19.2vw] font-normal text-[#D5102B] tracking-[-0.035em] uppercase leading-none filter drop-shadow-[0_0_60px_rgba(213,16,43,0.35)] whitespace-nowrap select-none transform scale-y-[1.12] origin-center">
+      <div className="hidden lg:flex absolute top-20 xl:top-24 2xl:top-28 inset-x-0 items-center justify-center pointer-events-none select-none z-0 px-2 sm:px-4 lg:px-6 w-full overflow-hidden filter drop-shadow-[0_0_70px_rgba(213,16,43,0.3)]">
+        <h1 className="font-portfolio text-[20vw] xl:text-[20.8vw] 2xl:text-[21.5vw] font-normal uppercase leading-none tracking-[-0.025em] whitespace-nowrap select-none transform scale-x-[1.05] scale-y-[1.12] origin-center bg-gradient-to-b from-[#E61B34] from-42% via-[#D5102B] via-48% to-[#46050E] to-95% bg-clip-text text-transparent">
           PORTFOLIO
         </h1>
       </div>
@@ -127,8 +127,8 @@ export default function Hero() {
       {/* 3. MOBILE-OPTIMIZED STRUCTURE */}
       <div className="lg:hidden flex flex-col items-center w-full z-20 pt-2 pb-4">
         <div className="relative w-full h-[46vh] min-h-[310px] max-h-[400px] flex items-end justify-center mb-4 overflow-visible">
-          <div className="absolute top-2 sm:top-4 inset-x-0 w-full px-1.5 flex items-center justify-center pointer-events-none select-none z-0">
-            <h1 className="font-portfolio text-[19vw] min-[380px]:text-[20vw] font-normal text-[#D5102B] tracking-[-0.035em] uppercase leading-none filter drop-shadow-[0_0_35px_rgba(213,16,43,0.4)] whitespace-nowrap select-none scale-y-[1.65] origin-top">
+          <div className="absolute top-2 sm:top-4 inset-x-0 w-full px-0.5 flex items-center justify-center pointer-events-none select-none z-0 overflow-hidden filter drop-shadow-[0_0_35px_rgba(213,16,43,0.35)]">
+            <h1 className="font-portfolio text-[21vw] min-[380px]:text-[22vw] font-normal uppercase leading-none tracking-[-0.025em] whitespace-nowrap select-none scale-x-[1.06] scale-y-[1.65] origin-top bg-gradient-to-b from-[#E61B34] from-42% via-[#D5102B] via-48% to-[#46050E] to-95% bg-clip-text text-transparent">
               PORTFOLIO
             </h1>
           </div>
