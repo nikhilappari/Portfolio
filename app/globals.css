@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Caveat:wght@500;600;700&family=Shadows+Into+Light&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -192,4 +192,9 @@ body {
 .font-portfolio {
   font-family: 'Anton', 'Bebas Neue', Impact, 'Arial Black', sans-serif;
   font-weight: 400;
+}
+
+/* Script / Handwriting Typography for "Hello, I'm" */
+.font-script {
+  font-family: 'Caveat', 'Shadows Into Light', cursive;
 }

@@ -188,8 +188,8 @@ export default function Hero() {
 
         <div className="w-full flex flex-col items-center text-center space-y-3">
           <div className="space-y-1">
-            <span className="text-[11px] font-mono tracking-widest text-[#ff2a3b] uppercase block font-bold">
-              HI, I'M
+            <span className="font-script text-2xl font-semibold text-white tracking-wide block transform -rotate-1">
+              Hello, I&apos;m
             </span>
             <h2 className="text-3xl font-black tracking-tight text-white uppercase leading-none font-sans">
               NIKHIL APPARI
@@ -249,8 +249,8 @@ export default function Hero() {
               transition={{ duration: 0.6 }}
               className="space-y-1"
             >
-              <span className="text-2xl xl:text-3xl font-serif italic text-gray-300 block">
-                Hello, I'm
+              <span className="font-script text-3xl xl:text-4xl 2xl:text-[2.6rem] font-semibold text-white tracking-wide block transform -rotate-1 origin-bottom-left drop-shadow-[0_2px_8px_rgba(0,0,0,0.7)]">
+                Hello, I&apos;m
               </span>
               <h2 className="text-5xl xl:text-6xl 2xl:text-7xl font-black tracking-tight text-white uppercase leading-[0.94] font-sans">
                 NIKHIL <br />
