@@ -84,7 +84,7 @@ export default function Hero() {
     <section className="relative w-full min-h-[100dvh] flex flex-col justify-between bg-[#07080a] text-white overflow-hidden pt-14 sm:pt-20 lg:pt-24 pb-2 sm:pb-4">
       
       {/* 1. Backdrop "PORTFOLIO" for Desktop (Calibrated so left 'P' and right 'O' are 100% visible) */}
-      <div className="hidden lg:flex absolute top-14 xl:top-18 inset-x-0 items-center justify-center pointer-events-none select-none z-0 px-6 sm:px-10 lg:px-16 w-full">
+      <div className="hidden lg:flex absolute top-28 xl:top-32 2xl:top-36 inset-x-0 items-center justify-center pointer-events-none select-none z-0 px-6 sm:px-10 lg:px-16 w-full">
         <h1 className="text-[14.2vw] xl:text-[14.8vw] font-black text-[#ff2a3b]/35 tracking-tight uppercase leading-none font-sans filter drop-shadow-[0_0_70px_rgba(255,42,59,0.25)] whitespace-nowrap select-none">
           PORTFOLIO
         </h1>
