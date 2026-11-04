@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -60,6 +62,23 @@ body {
 }
 
 /* Crimson Red Glass Cards */
+/* Reference-matched cinematic two-tone PORTFOLIO typography */
+.hero-portfolio-typography {
+  font-family: 'Bebas Neue', 'Anton', Impact, 'Arial Narrow', sans-serif;
+  letter-spacing: 0.035em;
+  background: linear-gradient(
+    180deg,
+    #e81b2e 0%,
+    #cc1224 48%,
+    #8f0b18 50%,
+    #5a060f 52%,
+    #3b0309 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 50px rgba(232, 27, 46, 0.45));
+}
+
 .crimson-glass-card {
   background: rgba(18, 20, 31, 0.7);
   backdrop-filter: blur(20px);
