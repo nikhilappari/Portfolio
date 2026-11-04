@@ -60,7 +60,7 @@ export default function Navbar() {
       />
 
       {/* Top Banner Line */}
-      <div className="border-b border-white/5 py-1 sm:py-2 px-4 sm:px-6 text-[10px] sm:text-[11px] font-mono tracking-widest uppercase flex items-center justify-between text-gray-400">
+      <div className="border-b border-white/5 py-1 sm:py-2 px-6 sm:px-10 lg:px-14 xl:px-16 2xl:px-20 max-w-[1800px] mx-auto text-[10px] sm:text-[11px] font-mono tracking-widest uppercase flex items-center justify-between text-gray-400">
         <span className="text-[#ff2a3b] font-bold flex items-center gap-2">
           <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-[#ff2a3b] animate-ping" />
           <span>AI / ML ENTHUSIAST</span>
@@ -76,7 +76,7 @@ export default function Navbar() {
       </div>
 
       {/* Main Navbar - Clean matched layout matching user image */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 py-1.5 sm:py-4 flex items-center justify-between">
+      <div className="max-w-[1800px] mx-auto px-6 sm:px-10 lg:px-14 xl:px-16 2xl:px-20 py-2 sm:py-4 flex items-center justify-between">
         {/* Brand Logo: Brush NA logo with crimson dot */}
         <Link
           href="#"

@@ -16,7 +16,7 @@ export default function TechStack() {
       {/* Ambient background glow */}
       <div className="absolute top-1/2 left-1/4 w-96 h-96 bg-[#ff2a3b]/5 rounded-full blur-3xl pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
+      <div className="max-w-[1720px] mx-auto px-6 sm:px-10 lg:px-14 xl:px-16 2xl:px-20 relative z-10">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}

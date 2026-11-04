@@ -68,7 +68,7 @@ export default function About() {
       {/* Background glow */}
       <div className="absolute top-1/3 left-0 w-96 h-96 bg-[#ff2a3b]/5 rounded-full blur-3xl pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
+      <div className="max-w-[1720px] mx-auto px-6 sm:px-10 lg:px-14 xl:px-16 2xl:px-20 relative z-10">
         {/* Section Header */}
         <div className="flex flex-col items-start gap-2.5 mb-8 sm:mb-10">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#ff2a3b]/10 border border-[#ff2a3b]/20 text-[#ff2a3b] text-xs font-mono tracking-widest uppercase">

@@ -45,7 +45,7 @@ export default function GitHubRepos() {
 
   return (
     <section className="relative py-24 sm:py-32 bg-[#07080a] text-white border-t border-white/10">
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+      <div className="max-w-[1720px] mx-auto px-6 sm:px-10 lg:px-14 xl:px-16 2xl:px-20">
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
           <div>

@@ -60,7 +60,7 @@ export default function Contact() {
       {/* Background glow */}
       <div className="absolute bottom-0 right-1/3 w-96 h-96 bg-[#ff2a3b]/10 rounded-full blur-3xl pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
+      <div className="max-w-[1720px] mx-auto px-6 sm:px-10 lg:px-14 xl:px-16 2xl:px-20 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
           {/* Left Column: Heading & Links */}
           <div className="lg:col-span-6 space-y-8">

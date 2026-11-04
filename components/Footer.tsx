@@ -11,7 +11,7 @@ export default function Footer() {
 
   return (
     <footer className="relative bg-[#07080a] text-white border-t border-white/10 pt-16 pb-12">
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 space-y-12">
+      <div className="max-w-[1720px] mx-auto px-6 sm:px-10 lg:px-14 xl:px-16 2xl:px-20 space-y-12">
         {/* Quote Bar from Reference UI */}
         <div className="crimson-glass-card p-8 rounded-3xl border border-[#ff2a3b]/20 bg-[#0a0c12]/90 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="space-y-1 text-center md:text-left">

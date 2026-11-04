@@ -10,7 +10,7 @@ export default function EducationAchievements() {
     <section id="dsa" className="relative py-24 sm:py-32 bg-[#07080a] text-white border-t border-white/10 scroll-mt-16 sm:scroll-mt-20">
       <span id="education" className="absolute -top-20" />
       <span id="achievements" className="absolute -top-20" />
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+      <div className="max-w-[1720px] mx-auto px-6 sm:px-10 lg:px-14 xl:px-16 2xl:px-20">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
           {/* Left Column: Education & Achievements */}
           <div className="lg:col-span-7 space-y-16">
