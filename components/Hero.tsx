@@ -83,9 +83,9 @@ export default function Hero() {
   return (
     <section className="relative w-full min-h-[100dvh] flex flex-col justify-between bg-[#07080a] text-white overflow-hidden pt-14 sm:pt-20 lg:pt-24 pb-2 sm:pb-4">
       
-      {/* 1. Backdrop "PORTFOLIO" for Desktop (Edge-to-edge span matching reference) */}
-      <div className="hidden lg:flex absolute top-14 xl:top-18 inset-x-0 items-center justify-center pointer-events-none select-none z-0 px-2 w-full overflow-hidden">
-        <h1 className="text-[18vw] font-black text-[#ff2a3b]/35 tracking-tight uppercase leading-none font-sans filter drop-shadow-[0_0_80px_rgba(255,42,59,0.3)] whitespace-nowrap select-none scale-x-105">
+      {/* 1. Backdrop "PORTFOLIO" for Desktop (Calibrated so left 'P' and right 'O' are 100% visible) */}
+      <div className="hidden lg:flex absolute top-14 xl:top-18 inset-x-0 items-center justify-center pointer-events-none select-none z-0 px-6 sm:px-10 lg:px-16 w-full">
+        <h1 className="text-[14.2vw] xl:text-[14.8vw] font-black text-[#ff2a3b]/35 tracking-tight uppercase leading-none font-sans filter drop-shadow-[0_0_70px_rgba(255,42,59,0.25)] whitespace-nowrap select-none">
           PORTFOLIO
         </h1>
       </div>
@@ -128,7 +128,7 @@ export default function Hero() {
       <div className="lg:hidden flex flex-col items-center w-full z-20 pt-2 pb-4">
         <div className="relative w-full h-[46vh] min-h-[310px] max-h-[400px] flex items-end justify-center mb-4 overflow-visible">
           <div className="absolute top-2 sm:top-4 inset-x-0 w-full px-1.5 flex items-center justify-center pointer-events-none select-none z-0">
-            <h1 className="text-[17.2vw] min-[380px]:text-[18.2vw] font-black text-[#ff2a3b]/45 tracking-tight uppercase leading-none font-sans filter drop-shadow-[0_0_35px_rgba(255,42,59,0.6)] whitespace-nowrap select-none scale-y-[2.35] origin-top">
+            <h1 className="text-[16.5vw] min-[380px]:text-[17.2vw] font-black text-[#ff2a3b]/45 tracking-tight uppercase leading-none font-sans filter drop-shadow-[0_0_35px_rgba(255,42,59,0.6)] whitespace-nowrap select-none scale-y-[2.35] origin-top">
               PORTFOLIO
             </h1>
           </div>
