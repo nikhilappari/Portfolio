@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -184,4 +186,9 @@ body {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+/* Hero Background PORTFOLIO Typography */
+.font-portfolio {
+  font-family: 'Anton', 'Bebas Neue', Impact, 'Arial Black', sans-serif;
 }

@@ -113,6 +113,12 @@ export default function RootLayout({
         />
         <link rel="icon" sizes="32x32" href="/na-brush-32.png" />
         <link rel="apple-touch-icon" href="/na-brush-192.png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap"
+          rel="stylesheet"
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
