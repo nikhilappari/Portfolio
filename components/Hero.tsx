@@ -127,7 +127,7 @@ export default function Hero() {
       {/* 3. MOBILE-OPTIMIZED STRUCTURE */}
       <div className="lg:hidden flex flex-col items-center w-full z-20 pt-2 pb-4">
         <div className="relative w-full h-[46vh] min-h-[310px] max-h-[400px] flex items-end justify-center mb-4 overflow-visible">
-          <div className="absolute top-8 min-[380px]:top-10 sm:top-12 inset-x-0 w-full px-1 sm:px-2 flex items-center justify-center pointer-events-none select-none z-0 overflow-hidden filter drop-shadow-[0_12px_28px_rgba(0,0,0,0.6)]">
+          <div className="absolute top-16 min-[380px]:top-20 sm:top-24 inset-x-0 w-full px-1 sm:px-2 flex items-center justify-center pointer-events-none select-none z-0 overflow-hidden filter drop-shadow-[0_12px_28px_rgba(0,0,0,0.6)]">
             <h1 className="font-portfolio text-[20vw] min-[380px]:text-[20.5vw] font-normal uppercase leading-none tracking-[-0.025em] whitespace-nowrap select-none transform scale-x-[1.05] scale-y-[1.12] origin-center bg-gradient-to-b from-[#e01b36] from-0% via-[#860b19] via-40% to-[#140205] to-82% bg-clip-text text-transparent">
               PORTFOLIO
             </h1>
