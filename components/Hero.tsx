@@ -127,8 +127,8 @@ export default function Hero() {
       {/* 3. MOBILE-OPTIMIZED STRUCTURE */}
       <div className="lg:hidden flex flex-col items-center w-full z-20 pt-2 pb-4">
         <div className="relative w-full h-[46vh] min-h-[310px] max-h-[400px] flex items-end justify-center mb-4 overflow-visible">
-          <div className="absolute top-2 sm:top-4 inset-x-0 w-full px-0.5 flex items-center justify-center pointer-events-none select-none z-0 overflow-hidden filter drop-shadow-[0_8px_18px_rgba(0,0,0,0.6)]">
-            <h1 className="font-portfolio text-[21vw] min-[380px]:text-[22vw] font-normal uppercase leading-none tracking-[-0.025em] whitespace-nowrap select-none scale-x-[1.06] scale-y-[1.65] origin-top bg-gradient-to-b from-[#e01b36] from-0% via-[#860b19] via-40% to-[#140205] to-82% bg-clip-text text-transparent">
+          <div className="absolute top-4 sm:top-6 inset-x-0 w-full px-3 sm:px-6 flex items-center justify-center pointer-events-none select-none z-0 overflow-hidden filter drop-shadow-[0_8px_20px_rgba(0,0,0,0.7)]">
+            <h1 className="font-portfolio text-[17.5vw] min-[380px]:text-[18vw] min-[440px]:text-[18.5vw] font-normal uppercase leading-none tracking-[-0.02em] whitespace-nowrap select-none bg-gradient-to-b from-[#e01b36] from-0% via-[#860b19] via-45% to-[#140205] to-88% bg-clip-text text-transparent">
               PORTFOLIO
             </h1>
           </div>
